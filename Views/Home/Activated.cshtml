@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">LASERS! PEW PEW PEW</h1>
+
+<pre>
+    _ 
+    / ) 
+   / /  
+  / /               /\ 
+ / /     .-```-.   / ^`-.  
+ \ \    /       \_/  (|) `o 
+  \ \  /   .-.   \\ _  ,--' 
+   \ \/   /   )   \( `^^^  
+    \   \/    (    )  
+     \   )     )  /     
+      ) /__    | (__  
+     (___)))   (__)))
+</pre>
+
+
+
+
+
+    @using (Html.BeginForm("Deactivate", "Home", FormMethod.Post))
+    {
+        <input type="submit" value="Deactivate laser pointer" id="Submit" class="btn btn-danger" onclick="location.href='@Url.Action("Activate")'" />
+
+    }
+
+</div>

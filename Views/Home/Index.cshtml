@@ -14,25 +14,13 @@
 (__(__)___(__)__)
 </pre>
 
-    <!-- atcivated state -->
-
-<pre>
-    _ 
-    / ) 
-   / /  
-  / /               /\ 
- / /     .-```-.   / ^`-.  
- \ \    /       \_/  (|) `o 
-  \ \  /   .-.   \\ _  ,--' 
-   \ \/   /   )   \( `^^^  
-    \   \/    (    )  
-     \   )     )  /     
-      ) /__    | (__  
-     (___)))   (__)))
-</pre>
 
 
-    <button type="button" class="btn btn-danger">Activate laser pointer</button>
-    <button type="button" class="btn btn-danger">Deactivate laser pointer</button>
+
+    @using (Html.BeginForm("Activate", "Home", FormMethod.Post))
+    {
+        <input type="submit" value="Activate laser pointer" id="Submit" class="btn btn-danger" onclick="location.href='@Url.Action("Activate")'" />
+
+    }
 
 </div>
